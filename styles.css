@@ -1,0 +1,48 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 20px;
+}
+
+/* Part 1: Button Hover Transition */
+.fancy-btn {
+  padding: 10px 20px;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.fancy-btn:hover {
+  transform: scale(1.2);
+  background: #45a049;
+}
+
+/* Part 1: Continuous Animation */
+.animated-box {
+  width: 100px;
+  height: 100px;
+  margin: 20px auto;
+  background: tomato;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-50px); }
+}
+
+/* Part 3: Box to Animate via JavaScript */
+.box {
+  width: 150px;
+  height: 150px;
+  margin: 20px auto;
+  background: dodgerblue;
+  transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+.box.animate {
+  transform: rotate(180deg) scale(1.2);
+  opacity: 0.5;
+}
